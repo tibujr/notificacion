@@ -35,8 +35,8 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
         
-        PushbotsPlugin.initialize("573f36da4a9efae4758b4567");
-        //PushbotsPlugin.initialize("573f36da4a9efae4758b4567", {"android":{"sender_id":"484433023834"}});
+        //PushbotsPlugin.initialize("573f36da4a9efae4758b4567");
+        PushbotsPlugin.initialize("573f36da4a9efae4758b4567", {"android":{"sender_id":"484433023834"}});
 
         /*if (PushbotsPlugin.isAndroid()) {
             PushbotsPlugin.initializeAndroid('573f36da4a9efae4758b4567', '484433023834');
