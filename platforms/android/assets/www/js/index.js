@@ -34,6 +34,15 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        
+        PushbotsPlugin.initialize("573f36da4a9efae4758b4567");
+        //PushbotsPlugin.initialize("573f36da4a9efae4758b4567", {"android":{"sender_id":"484433023834"}});
+
+        /*if (PushbotsPlugin.isAndroid()) {
+            PushbotsPlugin.initializeAndroid('573f36da4a9efae4758b4567', '484433023834');
+        } else if (PushbotsPlugin.isiOS()) {
+            PushbotsPlugin.initializeiOS('573f36da4a9efae4758b4567');
+        }*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -49,3 +58,9 @@ var app = {
 };
 
 app.initialize();
+
+//credencial: AIzaSyDa_yJ52aXq7TBwpcp-Lxvew72N0horp6c
+//numero projecto: 484433023834
+
+//api pushboot: 573f36da4a9efae4758b4567
+//clave pushboot: ad65e3b1eccce1881479bdb286715eb9
